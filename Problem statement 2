@@ -11,18 +11,18 @@ for i in A:
 	for j in A:
 		if(i+j == sum_1):
 			temp = [i,j]
-			L2.append(temp)
+			L1.append(temp)
 		for k in A:
 			if(i+j+k == sum_1):
 				temp = [i,j,k]
-				L2.append(temp)
+				L1.append(temp)
 			for l in A:
 				if(i+j+k+l == sum_1):
 					temp = [i,j,k,l]
-					L2.append(temp)
+					L1.append(temp)
 print("Possibilities for player_1:")
-for i in range(len(L2)):
-	print(L2[i])
+for i in range(len(L1)):
+	print(L1[i])
 
 print()
 
@@ -31,18 +31,18 @@ for i in A:
 	for j in A:
 		if(i+j == sum_2):
 			temp = [i,j]
-			L3.append(temp)
+			L2.append(temp)
 		for k in A:
 			if(i+j+k == sum_2):
 				temp = [i,j,k]
-				L3.append(temp)
+				L2.append(temp)
 			for l in A:
 				if(i+j+k+l == sum_2):
 					temp = [i,j,k,l]
-					L3.append(temp)
+					L2.append(temp)
 print("Possibilities for player_2:")
-for i in range(len(L3)):
-	print(L3[i])
+for i in range(len(L2)):
+	print(L2[i])
 
 		
 
