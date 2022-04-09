@@ -1,0 +1,4 @@
+arr = list(map(int,input().split()))
+
+if float((arr[0] / arr[1])) <= 1.9 and float((arr[0] / arr[1])) >= 1.8:
+  print("Eureka",arr[0],arr[1])
