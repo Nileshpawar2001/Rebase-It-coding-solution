@@ -1,0 +1,48 @@
+# Possibilities of dies
+value=100
+player_1=88
+player_2=87
+sum_1 = value - player_1
+sum_2 = value - player_2
+A = [1,2,3,4,5,6]
+L1 = []
+L2 = []
+for i in A:
+	for j in A:
+		if(i+j == sum_1):
+			temp = [i,j]
+			L2.append(temp)
+		for k in A:
+			if(i+j+k == sum_1):
+				temp = [i,j,k]
+				L2.append(temp)
+			for l in A:
+				if(i+j+k+l == sum_1):
+					temp = [i,j,k,l]
+					L2.append(temp)
+print("Possibilities for player_1:")
+for i in range(len(L2)):
+	print(L2[i])
+
+print()
+
+
+for i in A:
+	for j in A:
+		if(i+j == sum_2):
+			temp = [i,j]
+			L3.append(temp)
+		for k in A:
+			if(i+j+k == sum_2):
+				temp = [i,j,k]
+				L3.append(temp)
+			for l in A:
+				if(i+j+k+l == sum_2):
+					temp = [i,j,k,l]
+					L3.append(temp)
+print("Possibilities for player_2:")
+for i in range(len(L3)):
+	print(L3[i])
+
+		
+
