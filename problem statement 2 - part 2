@@ -1,0 +1,41 @@
+# 2nd condition dice throen possibiilities
+#case2
+
+
+A=[1,2,3,4,5,6]
+l1=[]
+l2=[]
+sum=100-88
+sum2=100-87
+snake1=98-88
+snake2=98-87
+for i in A:
+    for j in A:
+        for k in A:
+            for l in A:
+                if(i+j !=snake1):
+                    if(i+j+k!=snake1):
+                        if(i+j+k+l == sum):
+                            temp=[i,j,k,l]
+                            l1.append(temp)
+print("possibilities for player 1:")
+for i in l1:
+    print(i)
+    
+print()
+
+for i in A:
+    for j in A:
+        for k in A:
+            for l in A:
+                if(i+j !=snake2):
+                    if(i+j+k!=snake2):
+                        if(i+j+k+l == sum2):
+                            temp=[i,j,k,l]
+                            l2.append(temp)
+print("possibilities for player 2:")
+for i in l2:
+    print(i)
+
+
+    
